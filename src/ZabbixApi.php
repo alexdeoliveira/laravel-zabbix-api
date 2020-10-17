@@ -1,8 +1,8 @@
 <?php
 
-namespace Becker\Zabbix;
+namespace Alexdeoliveira\Zabbix;
 
-use Becker\Zabbix\ZabbixApiAbstract;
+use Alexdeoliveira\Zabbix\ZabbixApiAbstract;
 
 /**
  * Concrete class for the Zabbix API.

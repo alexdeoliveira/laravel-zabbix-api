@@ -1,6 +1,6 @@
 <?php
 
-namespace Becker\Zabbix;
+namespace Alexdeoliveira\Zabbix;
 
 use Exception;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Becker\Zabbix;
+namespace Alexdeoliveira\Zabbix;
 
-use Becker\Zabbix\ZabbixException as Exception;
+use Alexdeoliveira\Zabbix\ZabbixException as Exception;
 
 /**
  * @brief   Abstract class for the Zabbix API.
@@ -285,7 +285,7 @@ abstract class ZabbixApiAbstract
         if (!is_object($this->responseDecoded) && !is_array($this->responseDecoded)) {
             throw new Exception('Could not decode JSON response.');
         }
-        if (array_key_exists('error', $this->responseDecoded)) {
+        if (isset($this->responseDecoded->error)) {
             throw new Exception('API error '.$this->responseDecoded->error->code.': '.$this->responseDecoded->error->data);
         }
 
